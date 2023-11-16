@@ -1,0 +1,46 @@
+
+<div class="row">
+    <h2>Apólice de Seguro</h2>
+  </div>
+<div class="container">
+<div class="row">
+    <div class="col-mb-10">
+        <label class="form-label">Nome do segurado</label>
+        <input style="width: 30%;" type="text" class="form-control" [(ngModel)]="nome" placeholder="Digite seu nome...">
+    </div>
+    <div class="row">
+      <div  class="col-mb-4">
+        <label>Sexo</label>
+        <select style="width: 30%;" class="form-select" [(ngModel)]="sexo"  name="sexo">
+            <option value="" disabled selected >Selecione...</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-mb-3">
+        <label class="form-label">Idade</label>
+        <input style="width: 30%;" type="email" class="form-control" [(ngModel)]="idade"  placeholder="Digite sua Idade">
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-3">
+        <label  class="form-label">Valor do Automóvel</label>
+        <input style="width: 30%;"[(ngModel)]="valorA"  type="number" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <button (click)="resultado()"  class="btn btn-info"  style="margin-top: 24px; margin-bottom: 24px;">Calcular Media</button>
+        </div>    
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <label>Valor da Apólice</label>
+            <input style="margin-bottom: 30%;" [(ngModel)]="total"  type="number" class="form-control" disabled="">
+        </div>
+    </div>
+  </div>
+</div>
+
